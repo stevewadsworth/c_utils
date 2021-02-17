@@ -6,4 +6,4 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Run tests
-      run: ls
+      run: ls ..
