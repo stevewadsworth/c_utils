@@ -5,7 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Install
-      run: sudo gem install ceedling
-    - name: Run tests
-      run: ceedling test:all
+#    - name: Install
+#      run: sudo gem install ceedling
+#    - name: Run tests
+#      run: ceedling test:all
+    - name: Test
+      run: sudo ./ceedling
