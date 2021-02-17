@@ -6,6 +6,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install
-      run: gem install ceedling
+      run: sudo gem install ceedling
     - name: Run tests
       run: ceedling test:all
