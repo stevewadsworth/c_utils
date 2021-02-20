@@ -66,6 +66,7 @@
   :load_paths:
     - vendor/ceedling/plugins
   :enabled:
+    - junit_tests_report
     - stdout_pretty_tests_report
     - module_generator
     - gcov
