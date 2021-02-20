@@ -1,4 +1,4 @@
-![Tests](https://github.com/stevewadsworth/c_utils/actions/workflows/push_pr.yml/badge.svg)
+![Tests](https://github.com/stevewadsworth/c_utils/actions/workflows/main.yml/badge.svg)
 
 # c_utils
 C utilities
