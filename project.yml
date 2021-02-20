@@ -68,4 +68,3 @@
     - stdout_pretty_tests_report
     - module_generator
     - gcov
-    - xml_tests_report
