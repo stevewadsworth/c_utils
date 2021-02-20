@@ -1,0 +1,17 @@
+name: PR workflow
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: install ceedling
+      run: sudo gem install ceedling
+    - name: run tests
+      run: ceedling test:all
