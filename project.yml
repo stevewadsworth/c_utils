@@ -31,8 +31,14 @@
   :support:
     - test/support
 
+:flags:
+  :test:
+    :compile:
+      :*:
+        - -std=c11
+
 :defines:
-  :common: &common_defines [-std=c11]
+  :common: &common_defines []
   :test:
     - *common_defines
     - TEST
