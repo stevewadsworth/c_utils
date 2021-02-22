@@ -5,13 +5,25 @@ on:
     branches: [ main ]
 
 jobs:
-  test:
+  unit-tests:
 
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: install ceedling
+
+    # Install GCovr
+    - name: Install GCovr
+      run: |
+        sudo pip install gcovr
+
+    # Install Ceedling
+    - name: Install Ceedling
       run: sudo gem install ceedling
+
+    # Check out repository
+    - name: Checkout Repo
+      uses: actions/checkout@v2
+
+    # Run tests with coverage report
     - name: run tests with coverage
       run: ceedling gcov:all utils:gcov
