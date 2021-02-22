@@ -21,3 +21,4 @@ jobs:
       if: always()
       with:
         files: build/artifacts/**/*.xml
+        check_name: Unit Test Results
