@@ -13,5 +13,5 @@ jobs:
     - uses: actions/checkout@v2
     - name: install ceedling
       run: sudo gem install ceedling
-    - name: run tests
-      run: ceedling test:all
+    - name: run tests with coverage
+      run: ceedling gcov:all utils:gcov
