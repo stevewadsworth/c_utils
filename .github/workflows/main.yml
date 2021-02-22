@@ -15,10 +15,3 @@ jobs:
       run: sudo gem install ceedling
     - name: run tests
       run: ceedling test:all
-
-    - name: Publish Unit Test Results
-      uses: EnricoMi/publish-unit-test-result-action@v1.9
-      if: always()
-      with:
-        files: build/artifacts/**/*.xml
-        check_name: Unit Test Results
