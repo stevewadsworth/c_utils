@@ -71,5 +71,5 @@
 :plugins:
   :enabled:
     - gcov
-    - junit_tests_report
+    - xml_tests_report
     - stdout_ide_tests_report
