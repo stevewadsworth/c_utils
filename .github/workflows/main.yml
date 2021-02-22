@@ -27,3 +27,17 @@ jobs:
     # Run tests with coverage report
     - name: run tests with coverage
       run: ceedling gcov:all utils:gcov
+
+    - name: 'Archive Unit Test Results'
+      uses: actions/upload-artifact@v2
+      with:
+        name: unit-test-results
+        path: build/artifacts/gcov/report.xml
+        retention-days: 5
+
+    - name: 'Archive Coverage Report'
+      uses: actions/upload-artifact@v2
+      with:
+        name: unit-test-coverage
+        path: build/artifacts/gcov/*.html
+        retention-days: 5
